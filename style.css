@@ -108,10 +108,18 @@ body {
         url(images/bg-pattern-top.svg),
         url(images/bg-pattern-bottom.svg);
     background-position:
-        top -550px left -250px,
-        bottom -650px right -200px;
-    background-size: 1000px;
+        top -520px left -190px,
+        bottom -600px right -200px;
+    background-size: 900px;
     background-repeat: no-repeat;
+}
+
+@media (max-width:450px) {
+    body {
+        background-position:
+            top -35rem left -40rem,
+            bottom -37rem right -40rem;
+    }
 }
 
 .profile {
@@ -133,7 +141,7 @@ body {
 
 .profile__card-main {
     position: relative;
-    padding: 5rem 0 0 0;
+    padding: 4.5rem 0 0 0;
 }
 
 .profile__picture {
@@ -149,7 +157,7 @@ body {
 }
 
 .profile__content {
-    width: 20rem;
+    width: 19.5rem;
 }
 
 .profile__ID {
@@ -162,6 +170,8 @@ body {
 
 .profile__ID h1 {
     font-weight: var(--ff-base);
+    gap: .5rem;
+    display: flex;
 }
 
 .profile__ID h1 span {
@@ -169,13 +179,34 @@ body {
     color: black;
 }
 
+.profile__ID p {
+    padding-top: 0.5rem;
+}
+
 hr {
     display: block;
     width: auto;
-    margin-top: 1rem;
-    background-color: hsl(0, 3%, 85%);
+    margin-top: 0.65rem;
+    background-color: hsl(0, 0%, 59%, 30%);
+    border: none;
+    height: 0.05rem;
 }
 
+
+table{
+    padding: 1.5rem 0 1.3rem 1.2rem;
+    width: 17.5rem;
+    text-align: center;
+}
+
+table tr th{
+    color: black;
+}
+
+table tr td{
+    font-size: 0.75rem;
+    text-align: center;
+}
 .attribution {
     font-size: 11px;
     text-align: center;
