@@ -124,6 +124,7 @@ body {
 
 .profile {
     position: absolute;
+    box-shadow:1rem 2rem 3rem -1.5rem var(--clr-primary-400);
 }
 
 .profile__wrapper {
