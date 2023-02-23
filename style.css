@@ -84,11 +84,7 @@ h6 {
 /*
 
 
-/*General stylling*/
-* {
-    box-sizing: border-box;
-    margin: 0;
-}
+/*General styling*/
 
 body {
     margin: 0;
@@ -101,8 +97,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    height: 100vh;
 
     background-image:
         url(images/bg-pattern-top.svg),
@@ -131,7 +125,6 @@ body {
     position: relative;
     background-color: white;
     border-radius: 0.8rem;
-
 }
 
 .profile .profile__card-background {
@@ -151,10 +144,10 @@ body {
 }
 
 .profile__picture img {
-    -webkit-border-radius: 20rem;
-    border: 0.3rem solid white;
     height: 6.3rem;
     width: 6.3rem;
+    -webkit-border-radius: 20rem;
+    border: 0.3rem solid white; 
 }
 
 .profile__content {
@@ -185,32 +178,33 @@ body {
 }
 
 hr {
-    display: block;
     width: auto;
+    height: 0.05rem;
     margin-top: 0.65rem;
     background-color: hsl(0, 0%, 59%, 30%);
     border: none;
-    height: 0.05rem;
 }
 
-
-table{
+table {
     padding: 1.5rem 0 1.3rem 1.2rem;
     width: 17.5rem;
     text-align: center;
 }
 
-table tr th{
+table tr th {
     color: black;
 }
 
-table tr td{
+table tr td {
     font-size: 0.75rem;
     text-align: center;
 }
+
+/*footer styling*/
 .attribution {
     font-size: 11px;
-    text-align: center;
+    position: fixed;
+    bottom: 1rem;
 }
 
 .attribution a {
